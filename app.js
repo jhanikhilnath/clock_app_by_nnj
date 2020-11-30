@@ -7,12 +7,24 @@ let minuteDOM = document.querySelector('.min');
 let secondDOM = document.querySelector('.sec');
 let periodDOM = document.querySelector('.period');
 
-let months = ["January", "Febuary", "March", "April", "May", "June", "July", "August",
-"September", "October", "November", "December"]
+let months = [
+	'January',
+	'Febuary',
+	'March',
+	'April',
+	'May',
+	'June',
+	'July',
+	'August',
+	'September',
+	'October',
+	'November',
+	'December',
+];
 
-let weekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+let weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
-newTime()
+newTime();
 
 function newTime() {
 	let curr = new Date();
@@ -35,9 +47,13 @@ function newTime() {
 		period = 'AM';
 	}
 
-	monthDOM.textContent = months[month - 1]
-	dayDOM.textContent = weekDays[day - 1]
-	secondDOM.textContent = sec
+	hour = hour < 10 ? '0' + hour : hour;
+	min = min < 10 ? '0' + min : min;
+	sec = sec < 10 ? '0' + sec : sec;
+
+	monthDOM.textContent = months[month - 1];
+	dayDOM.textContent = weekDays[day - 1];
+	secondDOM.textContent = sec;
 	minuteDOM.textContent = min;
 	periodDOM.textContent = period;
 	hourDOM.textContent = hour;
@@ -45,4 +61,4 @@ function newTime() {
 	yearDOM.textContent = year;
 }
 
-setInterval(newTime, 900)
+setInterval(newTime, 900);
