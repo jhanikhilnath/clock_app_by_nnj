@@ -1,0 +1,68 @@
+@font-face {
+	font-family: 'Digital-7';
+	src: url('font/Digital-7.ttf.woff') format('woff'),
+		url('font/Digital-7.ttf.svg#Digital-7') format('svg'), url('font/Digital-7.ttf.eot'),
+		url('font/Digital-7.ttf.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	font-family: 'Digital-7';
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #10101e;
+}
+
+.datetime {
+	font-size: 60px;
+	color: #ffffff;
+	border: 5px solid #00ffff;
+	padding: 10px;
+	border-radius: 20px;
+	-webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+}
+
+.datetime:hover{
+  background: #2E94E3;
+  box-shadow: 0 0 30px #2E94E3;
+}
+
+.time span:not(:last-child) {
+	position: relative;
+	margin: 0px 6px;
+	font-weight: 600;
+}
+
+.time span:last-child {
+	background: #2e94e3;
+	font-size: 30px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: 10px;
+	padding: 0 5px;
+	border-radius: 3px;
+}
+
+.th{
+	font-size: 30px;
+}
+
+.date{
+  font-size: 60px;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.time {
+	text-align: center;
+	letter-spacing: 3px;
+}
