@@ -52,7 +52,7 @@ function newTime() {
 	sec = sec < 10 ? '0' + sec : sec;
 
 	monthDOM.textContent = months[month - 1];
-	dayDOM.textContent = weekDays[day - 1];
+	dayDOM.textContent = weekDays[day];
 	secondDOM.textContent = sec;
 	minuteDOM.textContent = min;
 	periodDOM.textContent = period;
