@@ -73,6 +73,7 @@ function newTime() {
 	hourDOM.textContent = hour;
 	dateDOM.textContent = date;
 	yearDOM.textContent = year;
+	thDOM.textContent = th;
 }
 
 setInterval(newTime, 100);
