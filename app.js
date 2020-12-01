@@ -35,7 +35,7 @@ function newTime() {
 	let date = curr.getDate();
 	let month = curr.getMonth();
 	let year = curr.getFullYear();
-	let period;
+	let period = 'AM';
 	
 	  if(hour >= 12){
             period = "PM";
