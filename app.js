@@ -6,6 +6,7 @@ let hourDOM = document.querySelector('.hour');
 let minuteDOM = document.querySelector('.min');
 let secondDOM = document.querySelector('.sec');
 let periodDOM = document.querySelector('.period');
+let thDOM = document.querySelector('.th');
 
 let months = [
 	'January',
@@ -36,6 +37,19 @@ function newTime() {
 	let month = curr.getMonth();
 	let year = curr.getFullYear();
 	let period = 'AM';
+	let th = 'th'
+	
+	  if (date == 1){
+	    th = "st"
+	  }
+	
+	  if (date == 1){
+	    th = "nd"
+	  }
+	
+	  if (date == 3){
+	    th = "rd"
+	  }
 	
 	  if(hour >= 12){
             period = "PM";
