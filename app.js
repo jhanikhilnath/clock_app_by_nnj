@@ -41,6 +41,10 @@ function newTime() {
 		hour -= 12;
 		period = 'PM';
 	}
+	
+	if (hour < 12) {
+                 period = 'AM';
+        }
 
 	if (hour === 0) {
 		hour = 12;
