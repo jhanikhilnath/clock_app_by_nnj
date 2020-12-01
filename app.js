@@ -43,7 +43,7 @@ function newTime() {
 	    th = "st"
 	  }
 	
-	  if (date == 1){
+	  if (date == 2){
 	    th = "nd"
 	  }
 	
