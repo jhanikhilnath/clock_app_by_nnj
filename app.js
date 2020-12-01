@@ -37,23 +37,15 @@ function newTime() {
 	let year = curr.getFullYear();
 	let period;
 	
-	if (hour < 12) {
-                 period = 'AM';
-        }
-	
-	if (hour == 12) {
-		period = 'PM';
-	}
-
-	if (hour > 12) {
-		hour -= 12;
-		period = 'PM';
-	}
-	
-	if (hour == 0) {
-		hour = 12;
-		period = 'AM';
-	}
+	  if(hour >= 12){
+            period = "PM";
+          }
+          if(hour == 0){
+            hour = 12;
+          }
+          if(hour > 12){
+            hour -= 12;
+          }
 
 	hour = hour < 10 ? '0' + hour : hour;
 	min = min < 10 ? '0' + min : min;
