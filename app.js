@@ -65,4 +65,4 @@ function newTime() {
 	yearDOM.textContent = year;
 }
 
-setInterval(newTime, 900);
+setInterval(newTime, 100);
